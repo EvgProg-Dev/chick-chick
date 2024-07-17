@@ -1,0 +1,82 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/raleway-v34-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+/* 1: #f6f3e3;
+2: #241d1c;
+3: #bfbdb2; */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    background: #241d1c;
+    color: #f6f3e3;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.container {
+    max-width: 1312px;
+    padding: 0 48px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+p, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+.service__success {
+    border: 3px solid red;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #8a8a88;
+    padding: 10px;
+    height: 100%;
+    width: 500px;
+
+}
+
+
+
+
+
+
+@media (max-width: 560px) {
+    .container {
+        padding: 0 24px;
+    }
+}
